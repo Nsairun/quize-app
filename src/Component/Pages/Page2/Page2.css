@@ -1,0 +1,72 @@
+body{
+    /* height: 40%;
+    width: 50%; */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: large;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-stretch: expanded;
+}
+
+.page-question {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000;
+    color: #f5f5f5;
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 5px 5px 5px #1c3535;
+    background:  -webkit-linear-gradient(to left, #3d7e83, #015852);
+    animation: animate 25s linear;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.page-question button {
+    background-color: aqua;
+    border: none;
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    font-weight: 700;
+    align-content: center;
+    justify-content: center;
+}
+
+.page-question .true {
+    color: aqua;
+    font-size: medium;
+    text-align: center;
+}
+
+.page-question .false {
+    color: red;
+    font-size: medium;
+}
+
+.page-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    line-height: 100px;
+    padding: 3%;
+    text-align: center;
+}
+
+.page-checkbox [type=checkbox] {
+    transform: translate(10px, 10px);
+    background-color: green;
+    text-indent: -20px;
+    font-size: 25px;
+    content: '✓';
+    color: rgb(7, 193, 250);
+    height: 3vh;
+    width: 4vw;
+    font: #0e0e0e;
+  }
+
