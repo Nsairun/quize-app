@@ -4,9 +4,7 @@ import './Button.css';
 function Button() {
   return (
     <div className="page-btn">
-      <button type="button" onClick={[]}>
-        Next
-      </button>
+      <button type="button">Next</button>
     </div>
   );
 }

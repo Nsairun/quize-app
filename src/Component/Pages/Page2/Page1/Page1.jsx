@@ -27,7 +27,7 @@ function Page1() {
         </li>
       </ul>
       <h2>GOOD LUCK!</h2>
-      <Link to="/question/something">
+      <Link to="/question/0">
         <Button />
       </Link>
     </div>

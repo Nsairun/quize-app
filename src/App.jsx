@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+/* eslint-disable react/jsx-no-constructed-context-values */
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Page1 from './Component/Pages/Page2/Page1/Page1';
 import Page2 from './Component/Pages/Page2/Page2';
 import Page3 from './Component/Pages/Page3/Page3';
-import { QuestionProvider } from './Context';
+import QuestionContext from './Context';
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -22,7 +23,10 @@ function App() {
   useEffect(() => {
     fetchData().then((res) => setQuestions(res.results));
   }, []);
-  const changePage = () => setPageNumber((prev) => prev + 1);
+
+  const changePage = () => {
+    setPageNumber((prev) => prev + 1);
+  };
 
   const updateAnsTracker = (ans, correctAns) => {
     if (ans === correctAns) {
@@ -40,7 +44,7 @@ function App() {
 
   return (
     <div className="app-pages">
-      <QuestionProvider
+      <QuestionContext.Provider
         value={{
           questions,
           changePage,
@@ -58,7 +62,7 @@ function App() {
             <Route path="/page3" element={<Page3 />} />
           </Routes>
         </BrowserRouter>
-      </QuestionProvider>
+      </QuestionContext.Provider>
     </div>
   );
 }

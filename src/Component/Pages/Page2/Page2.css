@@ -19,7 +19,7 @@ body{
     padding: 5%;
     height: 100%;
     width: 100%;
-    box-shadow: 2px 5px 5px 5px #1c3535;
+    box-shadow: 10px 10px 15px 5px #1c3535;
     background:  -webkit-linear-gradient(to left, #3d7e83, #015852);
     animation: animate 25s linear;
     animation-duration: 10s;
@@ -27,7 +27,7 @@ body{
 }
 
 .page-question button {
-    background-color: aqua;
+    background-color: rgb(1, 26, 26);
     border: none;
     font-size: large;
     font-style: italic;
@@ -35,6 +35,9 @@ body{
     font-weight: 700;
     align-content: center;
     justify-content: center;
+    height: 4vh;
+    width: 8vw;
+    cursor: pointer;
 }
 
 .page-question .true {
