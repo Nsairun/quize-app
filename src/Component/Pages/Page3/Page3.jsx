@@ -8,8 +8,15 @@ import QuestionContext from '../../../Context';
 import './Page3.css';
 
 function Page3() {
-  const { ansTracker, questions } = useContext(QuestionContext);
+  const { ansTracker, setansTracker, questions, setPageNumber } =
+    useContext(QuestionContext);
   const navigate = useNavigate();
+
+  const restart = () => {
+    setansTracker({ passed: 0, failed: 0 });
+    setPageNumber(0);
+    navigate('/');
+  };
 
   return (
     <div className="page-question">
@@ -26,7 +33,7 @@ function Page3() {
           );
         })}
       </ol>
-      <button className="retun_btn" type="button" onClick={() => navigate('/')}>
+      <button className="retun_btn" type="button" onClick={() => restart()}>
         restart
       </button>
     </div>

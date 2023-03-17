@@ -20,10 +20,6 @@ body{
     height: 100%;
     width: 100%;
     box-shadow: 10px 10px 15px 5px #1c3535;
-    background:  -webkit-linear-gradient(to left, #3d7e83, #015852);
-    animation: animate 25s linear;
-    animation-duration: 10s;
-    animation-delay: 2s;
 }
 
 .page-question button {

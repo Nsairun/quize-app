@@ -17,6 +17,10 @@ function Page2() {
     navigate(pageNumber === 9 ? '/page3' : `/question/${pageNumber + 1}`);
   };
 
+  console.clear();
+
+  console.log('this question in page 2', questions);
+
   return (
     questions.length > 0 && (
       <div className="page-question">

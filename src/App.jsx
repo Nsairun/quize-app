@@ -49,8 +49,10 @@ function App() {
           questions,
           changePage,
           pageNumber,
+          setPageNumber,
           updateAnsTracker,
           ansTracker,
+          setansTracker,
         }}
       >
         <BrowserRouter>
