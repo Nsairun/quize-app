@@ -1,27 +1,26 @@
-body{
-    height: 40%;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: left;
+body {
+  height: 40%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.page-question li{
-    text-align: left;
-    line-height: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: unset;
+.page-question li {
+  text-align: left;
+  line-height: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: unset;
 }
 
-button {
-    height: 4vh;
-    width: 9vw;
-    border-radius: 10px;
-    border: none;
-    background-color: aqua;
-    font-size: large;
-    font-weight: 700;
-    font-style: italic;
-    transform: translateY(5px);
+.page-question button {
+  height: 4vh;
+  width: 9vw;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  font-size: large;
+  font-weight: 700;
+  font-style: italic;
 }
