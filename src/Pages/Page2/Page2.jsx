@@ -1,7 +1,3 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable no-param-reassign */
-/* eslint-disable react/prop-types */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
