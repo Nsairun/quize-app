@@ -4,8 +4,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import QuestionContext from '../../../Context';
+import QuestionContext from '../../Context';
 import './Page2.css';
+import image2 from '../../images/workshop.jpg';
 
 function Page2() {
   const { questions, changePage, pageNumber, updateAnsTracker } =
@@ -20,12 +21,23 @@ function Page2() {
   return (
     questions.length > 0 && (
       <div className="page-question">
+        <div className="decoration">
+          <img src={image2} alt="pagepic" />
+        </div>
         <h2>Question</h2>
         <p
           dangerouslySetInnerHTML={{
             __html: questions[pageNumber].question,
           }}
         />
+        <div className="options">
+          <div className="option1">
+            <p>True</p>
+          </div>
+          <div>
+            <p>False</p>
+          </div>
+        </div>
         <div className="page-checkbox">
           <button
             className="true"
@@ -42,7 +54,6 @@ function Page2() {
           >
             True
           </button>
-
           <button
             className="false"
             id="False"

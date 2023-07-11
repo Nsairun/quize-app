@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../../../Button/Button';
+import Button from '../../../Component/Button/Button';
 import './Page1.css';
-import image from '../../../../images/workshop.jpg';
+import image from '../../../images/workshop.jpg';
 
 function Page1() {
   return (
     <div className="page-instruction">
-      <h1>I-QUIZ</h1>
+      <h1>IQ-QUIZ</h1>
       <h2>
         Welcome to our question and answering session for this semester. Below
         are the instructions to guide you answer the questions.

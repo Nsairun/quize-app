@@ -20,7 +20,7 @@ body {
 .page-instruction h1 {
   background: white;
   padding: 5px;
-  width: 15%;
+  width: min(15%, 100%);
   margin: auto;
   color: #000;
 }
@@ -105,4 +105,12 @@ button {
   font-size: large;
   font-weight: 700;
   padding: 10px;
+}
+
+
+@media only screen and (max-width: 770px) {
+    body {
+      margin: 0 auto;
+      padding: 0;
+    }
 }

@@ -19,11 +19,14 @@ function Page3() {
   };
 
   return (
-    <div className="page-question">
+    <div className="resultDisplay">
       <h2>Result Page</h2>
-      <p>passed: {ansTracker.passed}</p>
-      <p>failed: {ansTracker.failed}</p>
-      <ol>
+      <div className="answerDisplay">
+        <p className="green">passed: {ansTracker.passed}</p>
+        <p className="red">failed: {ansTracker.failed}</p>
+      </div>
+
+      <ol className="result">
         {questions.map((item, index) => {
           return (
             <li key={index}>
