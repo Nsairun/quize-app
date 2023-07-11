@@ -1,9 +1,10 @@
 /* eslint-disable react/no-danger */
 import { useContext } from 'react';
+import { AiFillEdit } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
 import './Page2.css';
-import image2 from '../../images/workshop.jpg';
+import image2 from '../../images/p6.jpg';
 
 function Page2() {
   const { questions, changePage, pageNumber, updateAnsTracker } =
@@ -34,6 +35,7 @@ function Page2() {
           <div>
             <p>False</p>
           </div>
+          <AiFillEdit />
         </div>
         <div className="page-checkbox">
           <button

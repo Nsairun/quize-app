@@ -1,8 +1,7 @@
-/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/no-danger */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/prop-types */
+/* eslint-disable react/no-array-index-key */
 import React, { useContext } from 'react';
+import { FaRegEdit, FaRegGrinWink, FaRegSadCry } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
 import './Page3.css';
@@ -20,10 +19,19 @@ function Page3() {
 
   return (
     <div className="resultDisplay">
-      <h2>Result Page</h2>
+      <h2>
+        <FaRegEdit />
+        Result Page
+      </h2>
       <div className="answerDisplay">
-        <p className="green">passed: {ansTracker.passed}</p>
-        <p className="red">failed: {ansTracker.failed}</p>
+        <p className="green">
+          <FaRegGrinWink />
+          passed: {ansTracker.passed}
+        </p>
+        <p className="red">
+          <FaRegSadCry />
+          failed: {ansTracker.failed}
+        </p>
       </div>
 
       <ol className="result">

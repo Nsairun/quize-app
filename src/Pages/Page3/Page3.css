@@ -6,6 +6,10 @@
   line-height: 15px;
   background: #000;
   color: #fff;
+  box-shadow: 4px 7px 15px #f7f7fa;
+  border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .answerDisplay {
@@ -23,14 +27,15 @@
   color: rgba(8, 248, 8, 0.87);
 }
 
-.result ol {
+.result {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
   padding: 25px;
-  box-shadow: 4px 7px 15px #f7f7fa;
+  line-height: 35px;
+  width: 80%;
 }
 
 .page-question button {
