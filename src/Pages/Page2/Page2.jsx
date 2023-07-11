@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
