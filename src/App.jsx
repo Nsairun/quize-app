@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useEffect, useState } from 'react';
-import Page1 from './Pages/Page2/Page1/Page1';
+import Page1 from './Pages/Page1/Page1';
 import Page2 from './Pages/Page2/Page2';
 import Page3 from './Pages/Page3/Page3';
 import QuestionContext from './Context';

@@ -4,7 +4,7 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import QuestionContext from '../../../Context';
+import QuestionContext from '../../Context';
 import './Page3.css';
 
 function Page3() {
