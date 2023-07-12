@@ -107,10 +107,51 @@ button {
   padding: 10px;
 }
 
-
 @media only screen and (max-width: 770px) {
-    body {
-      margin: 0 auto;
-      padding: 0;
-    }
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-instruction h1 {
+    background-image: linear-gradient(
+        rgba(21, 21, 22, 0.171),
+        rgba(21, 32, 12, 0.692),
+        rgba(12, 29, 32, 0.692)
+      ),
+      url(../../images/workshop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: max(200px, 100%);
+    height: max(210px);
+    text-decoration: overline;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 40px;
+  }
+
+  .page-instruction h2 {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .page-instruction p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .quizMainContainer img {
+    display: none;
+  }
+
+  .btmrole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -48,3 +48,14 @@
   font-weight: 700;
   padding: 5px;
 }
+
+@media only screen and (max-width: 770px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .resultDisplay {
+    width: 100%;
+  }
+}
