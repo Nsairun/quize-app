@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { FaRegEdit, FaRegGrinWink, FaRegSadCry } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
-import './Page3.css';
+import './resultPage.css';
 
 function Page3() {
   const { ansTracker, setansTracker, questions, setPageNumber } =

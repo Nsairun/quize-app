@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { AiFillEdit } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import QuestionContext from '../../Context';
-import './Page2.css';
+import './hero.css';
 import image2 from '../../images/p6.jpg';
 
 function Page2() {

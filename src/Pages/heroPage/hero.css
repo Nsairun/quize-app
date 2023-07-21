@@ -17,7 +17,7 @@ body{
     height: 50%;
     width: 50%;
     border: 0.1px solid #000;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     margin: 0 auto;
     box-shadow: 3px 5px 15px #1c3535;
     background: #1a191944;
@@ -28,7 +28,7 @@ body{
 }
 
 .page-question h2, p {
-    text-align: left;
+    text-align: center;
 }
 
 .options {
@@ -54,13 +54,12 @@ body{
 .page-checkbox {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 3rem;
     line-height: 100px;
     padding: 3%;
     text-align: center;
 }
-
 
 .page-question .false {
     color: red;

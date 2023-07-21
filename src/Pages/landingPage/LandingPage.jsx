@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../Component/Button/Button';
-import './Page1.css';
+import './landingPage.css';
 import image from '../../images/workshop.jpg';
 
 function Page1() {
