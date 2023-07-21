@@ -124,7 +124,7 @@ button {
     background-size: cover;
     background-position: center;
     width: max(200px, 100%);
-    height: max(210px);
+    height: max(250px);
     text-decoration: overline;
     color: #fff;
     display: flex;

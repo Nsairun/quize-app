@@ -1,5 +1,4 @@
 /* eslint-disable react/no-danger */
-/* eslint-disable react/no-array-index-key */
 import React, { useContext } from 'react';
 import { FaRegEdit, FaRegGrinWink, FaRegSadCry } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
@@ -35,9 +34,9 @@ function Page3() {
       </div>
 
       <ol className="result">
-        {questions.map((item, index) => {
+        {questions.map((item) => {
           return (
-            <li key={index}>
+            <li key={item.questions}>
               <p dangerouslySetInnerHTML={{ __html: item.question }} />
               {item.correct_answer}
             </li>
